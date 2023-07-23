@@ -94,6 +94,12 @@
     text-transform: uppercase;
     color: white;
     margin-bottom: 16px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #4f8ff0;
+      transition: 0.3s;
+    }
   }
 
   &__nav {
@@ -154,6 +160,35 @@
     &:hover {
       color: #4f8ff0;
       background-color: white;
+      transition: 0.3s;
+    }
+  }
+
+  &__rights {
+    background: #181818;
+    padding: 16px 0 16px;
+  }
+
+  &__rights-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    color: white;
+  }
+
+  &__policy {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    color: white;
+    transition: 0.3s;
+    &:hover {
+      color: #4f8ff0;
       transition: 0.3s;
     }
   }

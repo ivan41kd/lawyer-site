@@ -658,6 +658,11 @@ a {
   text-transform: uppercase;
   color: white;
   margin-bottom: 16px;
+  transition: 0.3s;
+}
+.footer__item:hover {
+  color: #4f8ff0;
+  transition: 0.3s;
 }
 .footer__nav {
   display: flex;
@@ -711,5 +716,30 @@ a {
 .footer__lawyer-button:hover {
   color: #4f8ff0;
   background-color: white;
+  transition: 0.3s;
+}
+.footer__rights {
+  background: #181818;
+  padding: 16px 0 16px;
+}
+.footer__rights-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copyright {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: white;
+}
+.footer__policy {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: white;
+  transition: 0.3s;
+}
+.footer__policy:hover {
+  color: #4f8ff0;
   transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */
