@@ -1,0 +1,72 @@
+.team {
+  background: #f7f7f7;
+  padding: 80px 0px 80px;
+
+  &__text {
+    text-align: center;
+  }
+  &__title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    &::after {
+      content: "";
+      width: 50px;
+      height: 3px;
+      background: #4f8ff0;
+      display: block;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: black;
+    margin-bottom: 48px;
+  }
+
+  &__layout-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 312px);
+    gap: 0 24px;
+  }
+
+  &__content {
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+    display: flex;
+  }
+
+  &__content-text {
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+
+  &__rang {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    text-transform: lowercase;
+  }
+
+  &__card-img {
+    width: 100%;
+    height: 390px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+}

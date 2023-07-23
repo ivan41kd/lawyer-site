@@ -1,0 +1,110 @@
+.header {
+  // Top
+
+  &__top {
+    background: #010101;
+    padding: 16px;
+  }
+  &__top-contacts {
+    display: flex;
+  }
+
+  &__top-phone {
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+  }
+
+  &__phone {
+    margin-right: 8px;
+  }
+
+  &__top-number {
+    font-weight: 600;
+    line-height: 120%;
+    font-size: 14px;
+    color: white;
+  }
+
+  &__top-mail {
+    display: flex;
+    align-items: center;
+  }
+
+  &__mail {
+    margin-right: 8px;
+  }
+
+  &__top-address {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+    color: white;
+  }
+
+  &__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top-call {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    color: #4f8ff0;
+  }
+
+  // Bottom
+
+  &__bottom {
+    background: rgba(1, 1, 1, 5.76);
+    padding: 28px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #4f8ff0;
+  }
+
+  &__subtitle {
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: lowercase;
+    font-size: 20px;
+    color: white;
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    text-align: center;
+    gap: 0 32px;
+  }
+
+  &__item {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    transition: 0.3s;
+    color: white;
+    &:hover {
+      color: #4f8ff0;
+      text-decoration-line: underline;
+      transition: 0.3s;
+    }
+  }
+}

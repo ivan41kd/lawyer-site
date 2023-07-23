@@ -1,0 +1,160 @@
+.footer {
+  background: #222222;
+  // Top
+
+  &__top {
+    padding-top: 80px;
+  }
+
+  &__container {
+    width: 1320px;
+  }
+
+  &__top-wrapper {
+    display: flex;
+    gap: 190px;
+    align-items: center;
+    border-bottom: 1px solid #8c8c8c;
+    padding-bottom: 68px;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    color: #4f8ff0;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: lowercase;
+    color: white;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: lowercase;
+    color: white;
+  }
+
+  // Bottom
+
+  &__bottom {
+    padding-bottom: 84px;
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    background-size: 55px 55px;
+    background-color: #2c2c2c;
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: 24px;
+  }
+
+  &__contacts {
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__cutaway {
+    margin-bottom: 24px;
+    display: flex;
+  }
+
+  &__action {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #8c8c8c;
+  }
+
+  &__contact {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__item {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 16px;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__lawyer {
+    display: flex;
+    flex-direction: column;
+    max-width: 424px;
+  }
+
+  &__lawyer-info {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  &__lawyer-icon {
+    margin-right: 24px;
+    max-width: 65px;
+    max-height: 65px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: white;
+  }
+
+  &__position {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    color: white;
+  }
+
+  &__lawyer-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: white;
+    margin-bottom: 24px;
+  }
+
+  &__lawyer-button {
+    padding: 16px 24px;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 120%; /* 16.8px */
+    text-transform: uppercase;
+    background: #4f8ff0;
+    color: white;
+    border: 2px solid#4f8ff0;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+      color: #4f8ff0;
+      background-color: white;
+      transition: 0.3s;
+    }
+  }
+}

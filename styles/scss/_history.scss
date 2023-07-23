@@ -1,0 +1,77 @@
+.history {
+  padding: 80px 0px 80px;
+
+  &__main {
+    display: flex;
+  }
+  &__title {
+    color: #222222;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+
+    &::after {
+      display: block;
+      content: "";
+      background: #4f8ff0;
+      width: 50px;
+      height: 3px;
+      margin-top: 10px;
+    }
+  }
+
+  &__blue {
+    color: #4f8ff0;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #222222;
+    margin-bottom: 48px;
+  }
+
+  &__img {
+    max-width: 535px;
+    max-height: 359px;
+    box-shadow: 4px 4px 12px 2px rgba(33, 33, 33, 0.25);
+    background-position: center;
+  }
+
+  &__button {
+    padding: 16px 24px;
+    background: #4f8ff0;
+    border: 2px solid #4f8ff0;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 24px;
+    transition: 0.3s;
+    &:hover {
+      color: #4f8ff0;
+      background-color: white;
+      transition: 0.3s;
+    }
+  }
+
+  &__button-сertificate {
+    padding: 16px 24px;
+    background: #e6e6e6;
+    border: 2px solid #e6e6e6;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: black;
+    transition: 0.3s;
+    &:hover {
+      background-color: white;
+      transition: 0.3s;
+    }
+  }
+}
