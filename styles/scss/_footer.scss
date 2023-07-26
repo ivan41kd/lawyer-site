@@ -46,7 +46,7 @@
   // Bottom
 
   &__bottom {
-    padding-bottom: 84px;
+    margin-bottom: 84px;
   }
 
   &__bottom-wrapper {
@@ -121,6 +121,9 @@
     margin-right: 24px;
     max-width: 65px;
     max-height: 65px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__name {

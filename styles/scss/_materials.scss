@@ -3,6 +3,7 @@
 
   &__text {
     text-align: center;
+    margin-bottom: 48px;
   }
   &__title {
     font-size: 28px;
@@ -24,12 +25,11 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
-    margin-bottom: 48px;
   }
 
   &__layout-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 424px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0 24px;
     margin-bottom: 48px;
   }

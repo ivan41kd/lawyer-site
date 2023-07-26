@@ -9,7 +9,6 @@
     text-transform: uppercase;
     color: #222222;
     text-align: center;
-    position: relative;
     margin-bottom: 24px;
     &::after {
       content: "";
@@ -34,7 +33,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 38px 24px;
-    margin: 48px 0px;
+    padding: 48px 0px;
   }
 
   &__icon {
@@ -55,6 +54,8 @@
       color: #f7f7f7;
       background: #4f8ff0;
     }
+
+    position: relative;
   }
 
   &__layout-title {
@@ -91,4 +92,5 @@
       transition: 0.3s;
     }
   }
+
 }

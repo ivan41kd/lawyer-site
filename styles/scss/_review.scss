@@ -1,8 +1,10 @@
 .review {
-  background: url(./review-background.jpg);
+  background: url(./review-background.webp);
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  width: 100%;
+  max-height: 588px;
 
   &__title {
     font-size: 28px;
@@ -11,6 +13,11 @@
     text-transform: uppercase;
     margin-bottom: 48px;
     padding-top: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     &::after {
       content: "";
       width: 50px;
@@ -21,9 +28,38 @@
     }
   }
 
+  &__company {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    margin-bottom: 4px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__slider {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__slider-button {
+    display: block;
+    background: none;
+    border: none;
+  }
+
   &__layout-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 648px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0 24px;
   }
 
@@ -33,10 +69,16 @@
     background: white;
     box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
     margin-bottom: 32px;
+    display: flex;
   }
 
   &__avatar {
     margin-right: 24px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__info {
@@ -49,6 +91,11 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
   }
 
   &__button {
@@ -84,5 +131,17 @@
       background-color: white;
       transition: 0.3s;
     }
+  }
+
+  &__layout-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__feather {
+    max-width: 55px;
+    max-height: 55px;
+    object-fit: cover;
+    object-position: center;
   }
 }

@@ -1,0 +1,21 @@
+.corner {
+  &__top-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 20px 20px 0px;
+  }
+
+  &__bottom-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0px 20px 20px;
+  }
+}
