@@ -1,5 +1,8 @@
 .intro {
-  background: url(./intro-background.webp);
+  background: image-set(
+    url(./intro-background.webp) 1x,
+    url("./intro-background@2x.webp") 2x
+  );
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -105,7 +108,7 @@
   &__slider-bullet-img {
     margin-right: 8px;
 
-    &:last-of-type{
+    &:last-of-type {
       margin-right: 0;
     }
   }

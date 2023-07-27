@@ -135,7 +135,8 @@ a {
 }
 
 .intro {
-  background: url(./intro-background.webp);
+  background: -webkit-image-set(url(./intro-background.webp) 1x, url("./intro-background@2x.webp") 2x);
+  background: image-set(url(./intro-background.webp) 1x, url("./intro-background@2x.webp") 2x);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -315,12 +316,12 @@ a {
   margin-bottom: 80px;
   display: block;
   margin: 0 auto;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .services__button:hover {
   color: #4f8ff0;
   background-color: white;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .history {
@@ -726,6 +727,34 @@ a {
   background-color: white;
   transition: 0.3s;
 }
+.materials__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.materials__hover-content {
+  position: absolute;
+  width: 424px;
+  height: 270px;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: rgba(79, 143, 240, 0.4);
+  cursor: pointer;
+}
+.materials__hover-content:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+.materials__hover-eye {
+  position: absolute;
+  right: 190px;
+  top: 110px;
+  z-index: 90;
+}
+.materials__eye {
+  padding: 10px;
+  background: white;
+}
 
 .footer {
   background: #222222;
@@ -817,8 +846,6 @@ a {
   display: flex;
 }
 .footer__lawyer {
-  display: flex;
-  flex-direction: column;
   max-width: 424px;
 }
 .footer__lawyer-info {
@@ -856,15 +883,13 @@ a {
 }
 .footer__lawyer-button {
   padding: 16px 24px;
-  align-items: flex-start;
   font-size: 14px;
   font-weight: 900;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
   text-transform: uppercase;
   background: #4f8ff0;
   color: white;
   border: 2px solid #4f8ff0;
-  text-align: center;
   transition: 0.3s;
 }
 .footer__lawyer-button:hover {

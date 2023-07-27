@@ -84,4 +84,38 @@
       transition: 0.3s;
     }
   }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__hover-content {
+    position: absolute;
+    width: 424px;
+    height: 270px;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: rgba(79, 143, 240, 0.4) ;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      transition: 0.3s;
+    }
+  }
+
+  &__hover-eye {
+    position: absolute;
+    right: 190px;
+    top: 110px;
+    z-index: 90;
+  }
+
+  &__eye {
+    padding: 10px;
+    background: white;
+  }
+
 }
