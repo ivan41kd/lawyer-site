@@ -4,3 +4,15 @@
   margin: 0 auto;
   box-sizing: content-box;
 }
+
+@media (max-width: 1021px) {
+  .container {
+    padding: 0px 69px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .container {
+    padding: 0 24px;
+  }
+}

@@ -27,13 +27,14 @@
     font-weight: 400;
     line-height: 120%;
     text-align: center;
+    margin-bottom: 48px;
   }
 
   &__layout-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 38px 24px;
-    padding: 48px 0px;
+    margin-bottom: 48px;
   }
 
   &__icon {
@@ -53,6 +54,11 @@
     &:hover {
       color: #f7f7f7;
       background: #4f8ff0;
+    }
+
+    &:hover .services__agreement-fill {
+      fill: white;
+      transition: 0.5s;
     }
 
     position: relative;
@@ -92,5 +98,55 @@
       transition: 0.5s;
     }
   }
+}
 
+@media (max-width: 1021px) {
+  .services {
+    padding: 60px 0px 60px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__layout-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px 24px;
+    }
+
+    &__layout-content {
+      padding: 30px 32px 40px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 616px) {
+  .services {
+    padding: 40px 0 40px;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    &__layout-wrapper {
+      grid-template-columns: repeat(6, 250px);
+      overflow: auto;
+    }
+
+    &__layout-content {
+      padding: 24px 16px 32px 16px;
+    }
+
+    &__layout-subtitle {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+  }
 }

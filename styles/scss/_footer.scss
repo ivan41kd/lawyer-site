@@ -70,6 +70,9 @@
   &__cutaway {
     margin-bottom: 24px;
     display: flex;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
   }
 
   &__action {
@@ -119,7 +122,7 @@
     margin-right: 24px;
     max-width: 65px;
     max-height: 65px;
-    border-radius: 100px;
+    border-radius: 50px;
     object-fit: cover;
     object-position: center;
   }
@@ -150,7 +153,7 @@
     padding: 16px 24px;
     font-size: 14px;
     font-weight: 900;
-    line-height: 120%; 
+    line-height: 120%;
     text-transform: uppercase;
     background: #4f8ff0;
     color: white;
@@ -189,6 +192,67 @@
     &:hover {
       color: #4f8ff0;
       transition: 0.3s;
+    }
+  }
+}
+
+@media (max-width: 1021px) {
+  .footer {
+    &__top {
+      padding-top: 60px;
+    }
+    &__description {
+      display: none;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__bottom {
+      margin-bottom: 60px;
+    }
+
+    &__cutaway {
+      margin-bottom: 34px;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__icon {
+      max-width: 24px;
+      max-height: 24px;
+    }
+
+    &__contact {
+      font-size: 14px;
+    }
+
+    &__lawyer {
+      max-width: 334px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 616px){
+  .footer{
+
+    &__top{
+      padding-top: 40px;
+    }
+
+    &__top-wrapper{
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+    }
+    &__bottom-wrapper{
+      flex-direction: column;
+    }
+
+    &__rights-wrapper{
+      flex-direction: column;
+      text-align: center;
     }
   }
 }

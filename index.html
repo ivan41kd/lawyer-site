@@ -22,7 +22,7 @@
   <body>
     <header class="header">
       <div class="header__top">
-        <div class="header container">
+        <div class="container">
           <div class="header__top-wrapper">
             <div class="header__top-contacts">
               <div class="header__top-phone">
@@ -39,13 +39,15 @@
               </div>
             </div>
             <div class="header__top-call">
-              <a href="#">Заказать звонок</a>
+              <button class="header__button">
+                <a href="#"> Заказать звонок</a>
+              </button>
             </div>
           </div>
         </div>
       </div>
       <div class="header__bottom">
-        <div class="header container">
+        <div class="container">
           <div class="header__bottom-wrapper">
             <div class="header__bottom-logo">
               <h4 class="header__title">Правозащитник</h4>
@@ -64,6 +66,30 @@
                 <li class="header__item"><a href="#footer">Контакты</a></li>
               </ul>
             </nav>
+            <div class="header__burger">
+              <input class="header__burger-chk" type="checkbox" name="" id="" />
+              <span class="header__burger-line"></span>
+              <ul class="header__burger-list">
+                <li class="header__burger-item">
+                  <a href="#services"> Услуги</a>
+                </li>
+                <li class="header__burger-item">
+                  <a href="#history">О компании</a>
+                </li>
+                <li class="header__burger-item">
+                  <a href="#team">Наши юристы</a>
+                </li>
+                <li class="header__burger-item">
+                  <a href="#review">Отзывы</a>
+                </li>
+                <li class="header__burger-item">
+                  <a href="#materials">Новости</a>
+                </li>
+                <li class="header__burger-item">
+                  <a href="#footer">Контакты</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -71,11 +97,11 @@
 
     <main class="main">
       <section class="intro">
-        <div class="intro__container container">
+        <div class="container">
           <div class="intro__opacity"></div>
           <div class="intro__main">
-            <h3 class="intro__upper-title">Оказываем весь комплекс</h3>
-            <h1 class="intro__title">Юридических услуг</h1>
+            <h1 class="intro__upper-title">Оказываем весь комплекс</h1>
+            <h3 class="intro__title">Юридических услуг</h3>
             <p class="intro__subtitle">
               Давно выяснено, что при оценке дизайна и композиции читаемый текст
               мешает сосредоточиться. Lorem Ipsum используют потому, что тот
@@ -117,7 +143,7 @@
       </section>
 
       <section class="services" id="services">
-        <div class="services container">
+        <div class="container">
           <h3 class="services__title">Наши услуги</h3>
           <p class="services__subtitle">
             Давно выяснено, что при оценке дизайна и композиции читаемый текст
@@ -127,11 +153,22 @@
 
           <div class="services__layout-wrapper">
             <div class="services__layout-content">
-              <img
-                src="./img/services/agreement.svg"
-                alt="agree"
-                class="services__icon"
-              />
+              <svg
+                width="36"
+                height="35"
+                viewBox="0 0 36 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="35px/agreement">
+                  <path
+                    id="Vector"
+                    class="services__agreement-fill"
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </g>
+              </svg>
               <h3 class="services__layout-title">Банкротство физических лиц</h3>
               <p class="services__layout-subtitle">
                 Процедуру банкротства физических лиц в России регулирует закон
@@ -167,11 +204,22 @@
               </div>
             </div>
             <div class="services__layout-content">
-              <img
-                src="./img/services/agreement.svg"
-                alt="agree"
-                class="services__icon"
-              />
+              <svg
+                width="36"
+                height="35"
+                viewBox="0 0 36 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="35px/agreement">
+                  <path
+                    id="Vector"
+                    class="services__agreement-fill"
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </g>
+              </svg>
               <h3 class="services__layout-title">Сопровождение сделок</h3>
               <p class="services__layout-subtitle">
                 Инициирование, оформление, осуществление сделки и достижение
@@ -207,11 +255,22 @@
               </div>
             </div>
             <div class="services__layout-content">
-              <img
-                src="./img/services/agreement.svg"
-                alt="agree"
-                class="services__icon"
-              />
+              <svg
+                width="36"
+                height="35"
+                viewBox="0 0 36 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="35px/agreement">
+                  <path
+                    id="Vector"
+                    class="services__agreement-fill"
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </g>
+              </svg>
               <h3 class="services__layout-title">Корпоративные споры</h3>
               <p class="services__layout-subtitle">
                 Корпоративные споры – споры, связанные с созданием юрлица,
@@ -247,11 +306,22 @@
               </div>
             </div>
             <div class="services__layout-content">
-              <img
-                src="./img/services/agreement.svg"
-                alt="agree"
-                class="services__icon"
-              />
+              <svg
+                width="36"
+                height="35"
+                viewBox="0 0 36 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="35px/agreement">
+                  <path
+                    id="Vector"
+                    class="services__agreement-fill"
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </g>
+              </svg>
               <h3 class="services__layout-title">
                 Недвижимость и строительство
               </h3>
@@ -289,11 +359,22 @@
               </div>
             </div>
             <div class="services__layout-content">
-              <img
-                src="./img/services/agreement.svg"
-                alt="agree"
-                class="services__icon"
-              />
+              <svg
+                width="36"
+                height="35"
+                viewBox="0 0 36 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="35px/agreement">
+                  <path
+                    id="Vector"
+                    class="services__agreement-fill"
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </g>
+              </svg>
               <h3 class="services__layout-title">Возврат страховых премий</h3>
               <p class="services__layout-subtitle">
                 Для возврата страховой премии нужно подготовить следующий пакет
@@ -329,11 +410,22 @@
               </div>
             </div>
             <div class="services__layout-content">
-              <img
-                src="./img/services/agreement.svg"
-                alt="agree"
-                class="services__icon"
-              />
+              <svg
+                width="36"
+                height="35"
+                viewBox="0 0 36 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="35px/agreement">
+                  <path
+                    id="Vector"
+                    class="services__agreement-fill"
+                    d="M29.6665 5.83329V23.3333H12.1665V5.83329H29.6665ZM29.6665 2.91663H12.1665C10.5623 2.91663 9.24984 4.22913 9.24984 5.83329V23.3333C9.24984 24.9375 10.5623 26.25 12.1665 26.25H29.6665C31.2707 26.25 32.5832 24.9375 32.5832 23.3333V5.83329C32.5832 4.22913 31.2707 2.91663 29.6665 2.91663ZM18.6853 20.4166L13.6248 15.3125L15.6665 13.2562L18.6853 16.2895L26.1665 8.74996L28.2082 10.8062L18.6853 20.4166ZM6.33317 8.74996H3.4165V29.1666C3.4165 30.7708 4.729 32.0833 6.33317 32.0833H26.7498V29.1666H6.33317V8.74996Z"
+                    fill="#4F8FF0"
+                  />
+                </g>
+              </svg>
               <h3 class="services__layout-title">Налоговое право и споры</h3>
               <p class="services__layout-subtitle">
                 Сопровождение налоговых проверок на любой стадии, анализ и
@@ -374,7 +466,7 @@
       </section>
 
       <section class="history" id="history">
-        <div class="history container">
+        <div class="container">
           <div class="history__main">
             <div class="history__left">
               <h3 class="history__title">
@@ -414,7 +506,7 @@
       </section>
 
       <section class="team" id="team">
-        <div class="team container">
+        <div class="container">
           <div class="team__text">
             <h3 class="team__title">Наши юристы</h3>
             <p class="team__subtitle">
@@ -646,7 +738,7 @@
       </section>
 
       <section class="review" id="review">
-        <div class="review container">
+        <div class="container">
           <div class="review__wrapper">
             <h2 class="review__title">Что о нас говорят клиенты</h2>
             <div class="review__slider">
@@ -718,13 +810,15 @@
               </p>
             </div>
           </div>
-          <button class="review__button">Все отзывы</button>
-          <button class="review__gray-button">Написать отзыв</button>
+          <div class="review__buttons">
+            <button class="review__button">Все отзывы</button>
+            <button class="review__gray-button">Написать отзыв</button>
+          </div>
         </div>
       </section>
 
       <section class="materials" id="materials">
-        <div class="materials container">
+        <div class="container">
           <div class="materials__text">
             <h3 class="materials__title">Полезные материалы</h3>
             <p class="materials__subtitle">
@@ -737,8 +831,8 @@
             <div class="materials__content">
               <img
                 srcset="
-                  ./img/materials/material1.webp 1x,
-                  ./img/team/material1@2x.webp   2x
+                  ./img/materials/material1.webp    1x,
+                  ./img/materials/material1@2x.webp 2x
                 "
                 alt="materials-image"
                 class="materials__img"
@@ -794,8 +888,8 @@
             <div class="materials__content">
               <img
                 srcset="
-                  ./img/materials/material2.webp 1x,
-                  ./img/team/material2@2x.webp   2x
+                  ./img/materials/material2.webp    1x,
+                  ./img/materials/material2@2x.webp 2x
                 "
                 alt="materials-image"
                 class="materials__img"
@@ -850,8 +944,8 @@
             <div class="materials__content">
               <img
                 srcset="
-                  ./img/materials/material3.webp 1x,
-                  ./img/team/material3@2x.webp   2x
+                  ./img/materials/material3.webp    1x,
+                  ./img/materials/material3@2x.webp 2x
                 "
                 alt="materials-image"
                 class="materials__img"
@@ -911,7 +1005,7 @@
 
     <footer class="footer">
       <div class="footer__top">
-        <div class="footer container">
+        <div class="container">
           <div class="footer__top-wrapper">
             <div class="footer__top-logo">
               <h4 class="footer__title">Правозащитник</h4>
@@ -928,7 +1022,7 @@
       </div>
 
       <div class="footer__bottom" id="footer">
-        <div class="footer container">
+        <div class="container">
           <div class="footer__bottom-wrapper">
             <div class="footer__contacts">
               <div class="footer__cutaway">
@@ -1006,7 +1100,7 @@
         </div>
       </div>
       <div class="footer__rights">
-        <div class="footer__container container">
+        <div class="container">
           <div class="footer__rights-wrapper">
             <p class="footer__copyright">Все права защищены, 2023</p>
             <p class="footer__policy">

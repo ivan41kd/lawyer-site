@@ -13,6 +13,14 @@
     color: black;
     text-transform: uppercase;
     margin-bottom: 24px;
+    &::after {
+      content: "";
+      width: 50px;
+      height: 3px;
+      background-color: #4f8ff0;
+      display: block;
+      margin: 0 auto;
+    }
   }
   &__subtitle {
     font-size: 16px;
@@ -24,7 +32,7 @@
 
   &__layout-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 312px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0 24px;
   }
 
@@ -114,8 +122,35 @@
     font-weight: 600;
     line-height: 120%;
   }
+}
 
-  .team__hover-content:hover ~ .team__card-img {
-    width: 100px;
+@media (max-width: 1021px) {
+  .team {
+    &__layout-wrapper {
+      grid-template-columns: repeat(4, 300px);
+      overflow: auto;
+    }
+
+    &__card-img {
+      height: 320px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 616px) {
+  .team {
+    padding: 40px 0 40px;
+    &__layout-wrapper {
+      grid-template-columns: repeat(4, 250px);
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      margin-bottom: 29px;
+    }
   }
 }

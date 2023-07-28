@@ -76,3 +76,40 @@
     }
   }
 }
+
+@media (max-width: 1021px) {
+  .history {
+    padding: 60px 0 60px;
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 616px) {
+  .history {
+    padding: 40px 0 40px;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    &__buttons{
+      text-align: center;
+    }
+
+    &__button {
+      margin-bottom: 24px;
+      margin-right: 0px;
+    }
+
+    &__button-certificate{
+      align-items: center;
+    }
+  }
+}
